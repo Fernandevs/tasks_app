@@ -13,8 +13,8 @@ class TasksApp extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final router = ref.watch(appRouterProvider);
-    final isDarkMode = ref.watch(darkModeProvider);
-    final colorSchemeSeed = ref.watch(colorSchemeSeedProvider);
+    final isDarkMode = ref.watch(darkModeProvider).value ?? false;
+    final colorSchemeSeed = ref.watch(colorSchemeSeedProvider).value;
 
     return MaterialApp.router(
       title: 'Tasks App',

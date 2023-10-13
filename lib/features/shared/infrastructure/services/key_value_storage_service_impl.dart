@@ -1,5 +1,5 @@
 import 'package:shared_preferences/shared_preferences.dart';
-import 'key_value_storage_service.dart';
+import 'package:tasks_app/features/shared/infrastructure/services/key_value_storage_service.dart';
 
 class KeyValueStorageServiceImpl extends KeyValueStorageService {
   Future<SharedPreferences> getSharedPrefs() async {

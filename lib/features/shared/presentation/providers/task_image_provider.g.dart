@@ -1,25 +1,25 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'dark_mode_provider.dart';
+part of 'task_image_provider.dart';
 
 // **************************************************************************
 // RiverpodGenerator
 // **************************************************************************
 
-String _$darkModeHash() => r'b6454dd3d44c9a5db032067d78b1df49d92fdb3b';
+String _$taskImageHash() => r'faaa05b20454787afc93d0456fbdbbfb012545b4';
 
-/// See also [DarkMode].
-@ProviderFor(DarkMode)
-final darkModeProvider =
-    AutoDisposeAsyncNotifierProvider<DarkMode, bool>.internal(
-  DarkMode.new,
-  name: r'darkModeProvider',
+/// See also [TaskImage].
+@ProviderFor(TaskImage)
+final taskImageProvider =
+    AutoDisposeAsyncNotifierProvider<TaskImage, Image>.internal(
+  TaskImage.new,
+  name: r'taskImageProvider',
   debugGetCreateSourceHash:
-      const bool.fromEnvironment('dart.vm.product') ? null : _$darkModeHash,
+      const bool.fromEnvironment('dart.vm.product') ? null : _$taskImageHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );
 
-typedef _$DarkMode = AutoDisposeAsyncNotifier<bool>;
+typedef _$TaskImage = AutoDisposeAsyncNotifier<Image>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member

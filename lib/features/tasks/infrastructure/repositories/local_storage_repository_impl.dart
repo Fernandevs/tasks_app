@@ -3,17 +3,20 @@ import 'package:tasks_app/features/tasks/domain/entities/task.dart';
 import 'package:tasks_app/features/tasks/domain/repositories/local_storage_repository.dart';
 
 class LocalStorageRepositoryImpl extends LocalStorageRepository {
-  final LocalStorageDatasource datasource;
+  final LocalStorageDatasource _datasource;
 
-  LocalStorageRepositoryImpl(this.datasource);
-
-  @override
-  Future<bool> isDone(int taskId) => datasource.isDone(taskId);
+  LocalStorageRepositoryImpl(this._datasource);
 
   @override
   Future<List<Task>> loadTasks({int limit = 10, int offset = 0}) =>
-      datasource.loadTasks(limit: limit, offset: offset);
+      _datasource.loadTasks(limit: limit, offset: offset);
 
   @override
-  Future<void> toggleDone(Task task) => datasource.toggleDone(task);
+  Future<Task?> getTask(int id) => _datasource.getTask(id);
+
+  @override
+  Future<void> toggleDone(int id) => _datasource.toggleDone(id);
+
+  @override
+  Future<bool> isDone(int id) => _datasource.isDone(id);
 }

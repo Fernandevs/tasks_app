@@ -6,23 +6,22 @@ part of 'local_storage_provider.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$localStorageRepositoryProviderHash() =>
-    r'aa105a7271f4b3a74838d7432b63d7f21fb08828';
+String _$localStorageRepositoryHash() =>
+    r'65dfdd30811505e73d8b21a40d2f4108fabd4126';
 
-/// See also [localStorageRepositoryProvider].
-@ProviderFor(localStorageRepositoryProvider)
-final localStorageRepositoryProviderProvider =
+/// See also [localStorageRepository].
+@ProviderFor(localStorageRepository)
+final localStorageRepositoryProvider =
     Provider<LocalStorageRepositoryImpl>.internal(
-  localStorageRepositoryProvider,
-  name: r'localStorageRepositoryProviderProvider',
+  localStorageRepository,
+  name: r'localStorageRepositoryProvider',
   debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
       ? null
-      : _$localStorageRepositoryProviderHash,
+      : _$localStorageRepositoryHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );
 
-typedef LocalStorageRepositoryProviderRef
-    = ProviderRef<LocalStorageRepositoryImpl>;
+typedef LocalStorageRepositoryRef = ProviderRef<LocalStorageRepositoryImpl>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member

@@ -15,9 +15,9 @@ class DarkModeControl extends ConsumerWidget {
       children: <Widget>[
         const Text('Modo oscuro'),
         const Spacer(),
-        Icon(!isDarkMode ? Icons.nightlight : Icons.sunny),
+        Icon(!isDarkMode.value! ? Icons.nightlight : Icons.sunny),
         Switch.adaptive(
-          value: isDarkMode,
+          value: isDarkMode.value!,
           onChanged: (value) => ref
               .read(darkModeProvider.notifier)
               .toggleDarkMode(),
